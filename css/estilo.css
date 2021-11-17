@@ -1,0 +1,203 @@
+body {
+	background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0) 0, rgba(255,255,255,1) 100%);
+}
+/* comienzo header con grid  desktop */
+
+
+  @media only screen and (min-width: 1024px)   {
+ 
+header {
+	background-image: url(../imagen/damevida/hintersee-3601004_1920.jpg);
+	display: grid;
+	grid-template-areas: " logo logo logo" 
+	"nav nav nav  ";
+
+}
+ .logo_small {
+	 grid-area: logo;
+	 height: 100px;
+	 width: 300px;
+	 margin-right: 50px;
+ }
+ ul {
+	 grid-area: nav;
+	 display: flex;
+	 justify-content:space-between; 
+	 
+	 margin-top: 50px;
+	 margin-left: 20px;
+	 font-size: 20px;
+	 background-color: rgba(138,221,45,0.6);  
+	 
+ }
+
+ /* comienzo grid main */
+ 
+ main {
+	background-image: linear-gradient(transparent , darkgreen);
+	 display: grid;
+	 grid-template-areas: "img img texto texto"
+	 "img img texto texto";
+ }
+
+ .img {
+	 grid: img;
+	 margin-top: 120px;
+	 margin-bottom: 150px;
+	 
+ }
+
+ .noticias {
+	 grid-area: texto;
+	 /* background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0) 0, rgba(255,255,255,1) 100%);*/
+	 margin-left: 30px;
+	 margin-top: 70px;
+	 padding-top:60px ;
+	 display: flex;
+	 flex-wrap: wrap;
+	 font-family: Verdana, Geneva, Tahoma, sans-serif
+	 colu
+ }
+ 
+ 
+
+/* flex*/
+a{
+	text-decoration: none;
+	color: darkgreen;
+	}
+	li {
+		list-style: none;
+	}
+
+
+
+/* comienzo footer*/
+footer section {
+	display: flex;
+	flex-wrap: initial;
+	padding: 30px 30px;
+	justify-content: space-between;
+	
+	height: 40px;
+	font-size: 10px;
+	background-color: darkgreen;
+
+}
+
+
+
+
+
+
+.footer {
+	display: flex;
+	text-decoration: none;
+	color: black;
+	
+	
+}
+.foteer{
+	font-size: 30px;
+}
+ }
+
+
+/*vista mobile */
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+
+	
+	
+ 
+	body {
+		
+		display: grid;
+		grid-template-areas: 
+		"logo"
+		"nav"
+		"img"
+		"main"
+		
+		;
+		
+	
+		    }
+			.logo_small{
+				grid-area: logo;
+		
+			}
+			.seccines {
+				grid-area: nav;
+				
+			}
+			.img {
+				grid-area: img;
+			}
+			img{
+				width: 100%;
+				height: auto;
+			}
+			.noticias {
+				grid-area: main;
+			}
+
+			
+	 .logo_small  {
+	 grid-area: logo;
+	 width: 100%;
+	 height: auto;
+	
+	 
+ }
+   ul{
+	 
+	 display: flex;
+	 justify-content:space-between; 
+	 list-style: none;
+	 	 color: darkgreen;	 
+	      }
+		  .links{
+			  text-decoration: rgb(110, 65, 39)	;
+			  width: 100%;
+			  height: auto;
+			  
+		  }
+
+		  
+
+		  /* comienzo footer*/
+ /* comienzo footer*/
+
+ .footer{
+	grid-area: footer;
+	background-color: blue;
+
+ }
+	
+ footer { display: grid;
+	grid-template-areas:  "img " " footer";
+	background-image: linear-gradient(top darkgreen,green,transparent);
+	height: 40px;
+	font-size: 10px;
+	background-color: darkgreen;
+ }
+    .divfooter{
+		grid-area: img;
+	}
+	.sectionfooter {
+		grid-area: footer;
+		display: flex
+		;
+		justify-content: space-around;
+		font-family: Arial, Helvetica, sans-serif;
+		background-image: linear-gradient(top darkgreen,green,transparent);
+	 
+	}
+
+	.footerimg {
+		height: 15	px;
+		width: 15	px;
+	}
+	 }
